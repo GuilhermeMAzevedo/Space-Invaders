@@ -1,0 +1,28 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1757805037
+icon.svg::CompressedTexture2D/CompressedTexture2D::2252446495058623977::1757796875::1757796883::1::::<><><>0<>0<>63b179352a71c109d8fba7f109aff366<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile/TextFile::-1::1757796734::0::1::::<><><>0<>0<><>::
+::res://Assets Space Invades/::1757796907
+::res://Assets Space Invades/fonts/::1757796906
+::res://Assets Space Invades/fonts/atari-classic-font/::1757796930
+AtariClassic-gry3.ttf::FontFile/FontFile::3964549128210794966::1755696300::1757796930::1::::<><><>0<>0<>b01df0112184fe2e06f58f59df525d41<>res://.godot/imported/AtariClassic-gry3.ttf-e0fb950569143f2b1a0488d098a899e8.fontdata::
+AtariClassicChunky-PxXP.ttf::FontFile/FontFile::3316751431692154916::1755696300::1757796930::1::::<><><>0<>0<>967440b6c8ba0fa9512e8ea59366922e<>res://.godot/imported/AtariClassicChunky-PxXP.ttf-013e44187e305bab956d4a8175819cfe.fontdata::
+AtariClassicExtrasmooth-LxZy.ttf::FontFile/FontFile::4629975568596412612::1755696300::1757796930::1::::<><><>0<>0<>44bd7f0661a398936d3ae90cdef52d18<>res://.godot/imported/AtariClassicExtrasmooth-LxZy.ttf-28d3f17d87ba098c7560af10fea51921.fontdata::
+AtariClassicSmooth-XzW2.ttf::FontFile/FontFile::7156253454791510807::1755696300::1757796930::1::::<><><>0<>0<>31b7930c4d684f7d4bd0e91b64045303<>res://.godot/imported/AtariClassicSmooth-XzW2.ttf-8b7b385493de7d41b41434c19cab781a.fontdata::
+::res://Assets Space Invades/sfx/::1757796930
+explosion.wav::AudioStreamWAV/AudioStreamWAV::3803016784266659667::1755696299::1757796930::1::::<><><>0<>0<>c32deda571d69facb6dab7c797f941dc<>res://.godot/imported/explosion.wav-96879c49d59c259f6d03a66feb7d5bb9.sample::
+fastinvader1.wav::AudioStreamWAV/AudioStreamWAV::12496016389364778::1755696299::1757796930::1::::<><><>0<>0<>85b9f6f593c576fdeb0ee02b92257571<>res://.godot/imported/fastinvader1.wav-803def4114d83fbb3bcd1c0a37d45bbc.sample::
+invaderkilled.wav::AudioStreamWAV/AudioStreamWAV::7080090739287983809::1755696299::1757796930::1::::<><><>0<>0<>1722ea5af14486a314880c952504811c<>res://.godot/imported/invaderkilled.wav-576aef180487a34fe8f032155770bf04.sample::
+shoot.wav::AudioStreamWAV/AudioStreamWAV::3224481487804282886::1755696299::1757796930::1::::<><><>0<>0<>fef37a2c930f4f63c6d117985a228ce9<>res://.godot/imported/shoot.wav-af59eedf01827655890cbd801448f2cc.sample::
+::res://Assets Space Invades/Sprites/::1757796930
+alien1.png::CompressedTexture2D/CompressedTexture2D::8841928125414841149::1755696300::1757796930::1::::<><><>0<>0<>cf2ddd3f7fe3150d7a93a12e43540d45<>res://.godot/imported/alien1.png-1afd042dbbb4763415e2eddb8283a76a.ctex::
+bloque.png::CompressedTexture2D/CompressedTexture2D::8037822626188380571::1755696300::1757796930::1::::<><><>0<>0<>be0a50e96fc3facc0637586649062329<>res://.godot/imported/bloque.png-ac6edbb0c8fea7ddb13bdf75fe79c3e9.ctex::
+bonus.png::CompressedTexture2D/CompressedTexture2D::1106921009504769821::1755696300::1757796930::1::::<><><>0<>0<>10ce7cec078f27fcdcee1060d482a25b<>res://.godot/imported/bonus.png-9a29b16a2ac57319114c5260b595ebae.ctex::
+disparoEnemigo.png::CompressedTexture2D/CompressedTexture2D::3441347417019295273::1755696300::1757796930::1::::<><><>0<>0<>eb13b94911049fe836ace7adfb8496e0<>res://.godot/imported/disparoEnemigo.png-54a63989306512e63e11fd610686e8cb.ctex::
+disparoJugador.png::CompressedTexture2D/CompressedTexture2D::4844777099064771309::1755696300::1757796930::1::::<><><>0<>0<>aa1ba5e44cfdddb68f1e4faa00271c86<>res://.godot/imported/disparoJugador.png-5043dfbdcced7a07053f0abb174f8b80.ctex::
+jugador.png::CompressedTexture2D/CompressedTexture2D::877578656364534629::1755696300::1757796930::1::::<><><>0<>0<>94c5f6a1520b70f1c7b098f53a9cd4bd<>res://.godot/imported/jugador.png-23dff42b5e35c528cbe7531e2c7c8bb5.ctex::
+::res://cenas/::1757804965
+jogador.gd::GDScript::1664147564236290619::1757804168::0::1::::<>CharacterBody2D<><>0<>0<><>::
+laser.gd::GDScript::402632831430201299::1757804962::0::1::::<>Area2D<><>0<>0<><>::
+Laser.tscn::PackedScene::2920455502089398535::1757804965::0::1::::<><><>0<>0<><>::uid://cba31hja1c41v::::res://Assets Space Invades/Sprites/disparoJugador.png
+main.tscn::PackedScene::2801168999931197967::1757804941::0::1::::<><><>0<>0<><>::uid://xyejc66c22yh::::res://cenas/jogador.gd<>uid://mrduev78klxl::::res://Assets Space Invades/Sprites/jugador.png<>uid://dx8di8weg7k6x::::res://Assets Space Invades/Sprites/alien1.png

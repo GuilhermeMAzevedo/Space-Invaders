@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://chukmgdoowye5"]
+
+[ext_resource type="Script" uid="uid://xyejc66c22yh" path="res://cenas/jogador.gd" id="1_06a7y"]
+[ext_resource type="Texture2D" uid="uid://mrduev78klxl" path="res://Assets Space Invades/Sprites/jugador.png" id="2_w41yl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b30p5"]
+size = Vector2(15, 6)
+
+[node name="jogador" type="CharacterBody2D"]
+script = ExtResource("1_06a7y")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_b30p5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_w41yl")
+hframes = 2
+
+[node name="pontoDoLaser" type="Marker2D" parent="."]
+position = Vector2(0, -4)
