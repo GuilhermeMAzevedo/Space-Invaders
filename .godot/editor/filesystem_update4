@@ -1,4 +1,9 @@
-res://cenas/Laser.tscn
+res://cenas/alien.gd
 res://cenas/main.tscn
+res://cenas/Laser.tscn
 res://cenas/jogador.tscn
+res://cenas/alien.tscn
+res://cenas/group_aliens.tscn
+res://cenas/group_aliens.gd
+res://cenas/laser.gd
 res://cenas/jogador.gd

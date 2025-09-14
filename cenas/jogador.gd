@@ -3,9 +3,11 @@ extends CharacterBody2D
 @export var laser = preload("res://cenas/Laser.tscn")
 
 @onready var ptoLaser = $pontoDoLaser
+@onready var timer_disparo = $timerDisparo
 
 var direction = Vector2()
 const SPEED = 100.0
+var pode_disparar = true
 
 func _physics_process(delta):
 	var direction := Input.get_axis("ui_left", "ui_right")
@@ -21,3 +23,6 @@ func _physics_process(delta):
 
 	move_and_slide()
 	
+	
+func _on_timer_disparo_timeout():
+	pode_disparar = true
