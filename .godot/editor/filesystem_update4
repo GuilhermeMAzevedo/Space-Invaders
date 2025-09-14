@@ -3,8 +3,9 @@ res://cenas/Laser.tscn
 res://cenas/jogador.tscn
 res://cenas/alien.tscn
 res://cenas/group_aliens.tscn
-res://cenas/group_aliens.gd
 res://cenas/missil.tscn
 res://cenas/missil.gd
+res://cenas/jogador.gd
 res://cenas/alien.gd
-res://cenas/main.gd
+res://cenas/bloco.tscn
+res://cenas/bloco.gd

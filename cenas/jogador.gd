@@ -4,6 +4,7 @@ extends CharacterBody2D
 
 @onready var ptoLaser = $pontoDoLaser
 @onready var timer_disparo = $timerDisparo
+@onready var animation_player = $AnimationPlayer
 
 var direction = Vector2()
 const SPEED = 100.0
@@ -26,3 +27,12 @@ func _physics_process(delta):
 	
 func _on_timer_disparo_timeout():
 	pode_disparar = true
+
+func destruir():
+	#print("tomou dano")
+	animation_player.play("destruido")
+	
+func eliminado():
+	if !self.is_queued_for_deletion():
+		get_parent().remove_child(self)
+		queue_free()

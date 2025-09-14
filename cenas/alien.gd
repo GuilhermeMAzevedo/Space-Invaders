@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 var Missil = preload("res://cenas/missil.tscn")
+
 @onready var time_movimento = $timerMovimento
 @onready var animation_alien = $AnimationAlien
 @onready var spawn_point = $spawnPoint

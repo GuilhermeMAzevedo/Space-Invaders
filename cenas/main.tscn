@@ -1,15 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://bf553x4mydmlr"]
+[gd_scene load_steps=6 format=3 uid="uid://bf553x4mydmlr"]
 
 [ext_resource type="Script" uid="uid://b51pw6qcspyjy" path="res://cenas/main.gd" id="1_b30p5"]
 [ext_resource type="PackedScene" uid="uid://chukmgdoowye5" path="res://cenas/jogador.tscn" id="1_t4ukd"]
 [ext_resource type="PackedScene" uid="uid://ce6vhm4jl8e36" path="res://cenas/group_aliens.tscn" id="2_t4ukd"]
 [ext_resource type="FontFile" uid="uid://bwqpsr6j4ris1" path="res://Assets Space Invades/fonts/atari-classic-font/AtariClassic-gry3.ttf" id="4_5wwvk"]
+[ext_resource type="PackedScene" uid="uid://0q188e1damjy" path="res://cenas/bloco.tscn" id="5_5wwvk"]
 
 [node name="main" type="Node"]
 script = ExtResource("1_b30p5")
 
 [node name="jogador" parent="." instance=ExtResource("1_t4ukd")]
-position = Vector2(124, 234)
+position = Vector2(127, 230)
 
 [node name="groupAliens" parent="." instance=ExtResource("2_t4ukd")]
 
@@ -29,3 +30,219 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("4_5wwvk")
 theme_override_font_sizes/font_size = 7
 text = "0"
+
+[node name="base" type="Node2D" parent="."]
+position = Vector2(30, 212)
+
+[node name="bloco5" parent="base" instance=ExtResource("5_5wwvk")]
+position = Vector2(-2, -4)
+
+[node name="bloco4" parent="base" instance=ExtResource("5_5wwvk")]
+position = Vector2(-6, -4)
+
+[node name="bloco" parent="base" instance=ExtResource("5_5wwvk")]
+position = Vector2(-4, -8)
+
+[node name="bloco2" parent="base" instance=ExtResource("5_5wwvk")]
+position = Vector2(4, -8)
+
+[node name="bloco3" parent="base" instance=ExtResource("5_5wwvk")]
+position = Vector2(2, -4)
+
+[node name="bloco6" parent="base" instance=ExtResource("5_5wwvk")]
+position = Vector2(0, -8)
+
+[node name="bloco7" parent="base" instance=ExtResource("5_5wwvk")]
+position = Vector2(6, -4)
+
+[node name="bloco8" parent="base" instance=ExtResource("5_5wwvk")]
+position = Vector2(-8, 0)
+
+[node name="bloco9" parent="base" instance=ExtResource("5_5wwvk")]
+position = Vector2(-8, 4)
+
+[node name="bloco10" parent="base" instance=ExtResource("5_5wwvk")]
+position = Vector2(8, 0)
+
+[node name="bloco11" parent="base" instance=ExtResource("5_5wwvk")]
+position = Vector2(8, 4)
+
+[node name="base2" type="Node2D" parent="."]
+position = Vector2(69, 212)
+
+[node name="bloco5" parent="base2" instance=ExtResource("5_5wwvk")]
+position = Vector2(-2, -4)
+
+[node name="bloco4" parent="base2" instance=ExtResource("5_5wwvk")]
+position = Vector2(-6, -4)
+
+[node name="bloco" parent="base2" instance=ExtResource("5_5wwvk")]
+position = Vector2(-4, -8)
+
+[node name="bloco2" parent="base2" instance=ExtResource("5_5wwvk")]
+position = Vector2(4, -8)
+
+[node name="bloco3" parent="base2" instance=ExtResource("5_5wwvk")]
+position = Vector2(2, -4)
+
+[node name="bloco6" parent="base2" instance=ExtResource("5_5wwvk")]
+position = Vector2(0, -8)
+
+[node name="bloco7" parent="base2" instance=ExtResource("5_5wwvk")]
+position = Vector2(6, -4)
+
+[node name="bloco8" parent="base2" instance=ExtResource("5_5wwvk")]
+position = Vector2(-8, 0)
+
+[node name="bloco9" parent="base2" instance=ExtResource("5_5wwvk")]
+position = Vector2(-8, 4)
+
+[node name="bloco10" parent="base2" instance=ExtResource("5_5wwvk")]
+position = Vector2(8, 0)
+
+[node name="bloco11" parent="base2" instance=ExtResource("5_5wwvk")]
+position = Vector2(8, 4)
+
+[node name="base3" type="Node2D" parent="."]
+position = Vector2(107, 212)
+
+[node name="bloco5" parent="base3" instance=ExtResource("5_5wwvk")]
+position = Vector2(-2, -4)
+
+[node name="bloco4" parent="base3" instance=ExtResource("5_5wwvk")]
+position = Vector2(-6, -4)
+
+[node name="bloco" parent="base3" instance=ExtResource("5_5wwvk")]
+position = Vector2(-4, -8)
+
+[node name="bloco2" parent="base3" instance=ExtResource("5_5wwvk")]
+position = Vector2(4, -8)
+
+[node name="bloco3" parent="base3" instance=ExtResource("5_5wwvk")]
+position = Vector2(2, -4)
+
+[node name="bloco6" parent="base3" instance=ExtResource("5_5wwvk")]
+position = Vector2(0, -8)
+
+[node name="bloco7" parent="base3" instance=ExtResource("5_5wwvk")]
+position = Vector2(6, -4)
+
+[node name="bloco8" parent="base3" instance=ExtResource("5_5wwvk")]
+position = Vector2(-8, 0)
+
+[node name="bloco9" parent="base3" instance=ExtResource("5_5wwvk")]
+position = Vector2(-8, 4)
+
+[node name="bloco10" parent="base3" instance=ExtResource("5_5wwvk")]
+position = Vector2(8, 0)
+
+[node name="bloco11" parent="base3" instance=ExtResource("5_5wwvk")]
+position = Vector2(8, 4)
+
+[node name="base4" type="Node2D" parent="."]
+position = Vector2(147, 212)
+
+[node name="bloco5" parent="base4" instance=ExtResource("5_5wwvk")]
+position = Vector2(-2, -4)
+
+[node name="bloco4" parent="base4" instance=ExtResource("5_5wwvk")]
+position = Vector2(-6, -4)
+
+[node name="bloco" parent="base4" instance=ExtResource("5_5wwvk")]
+position = Vector2(-4, -8)
+
+[node name="bloco2" parent="base4" instance=ExtResource("5_5wwvk")]
+position = Vector2(4, -8)
+
+[node name="bloco3" parent="base4" instance=ExtResource("5_5wwvk")]
+position = Vector2(2, -4)
+
+[node name="bloco6" parent="base4" instance=ExtResource("5_5wwvk")]
+position = Vector2(0, -8)
+
+[node name="bloco7" parent="base4" instance=ExtResource("5_5wwvk")]
+position = Vector2(6, -4)
+
+[node name="bloco8" parent="base4" instance=ExtResource("5_5wwvk")]
+position = Vector2(-8, 0)
+
+[node name="bloco9" parent="base4" instance=ExtResource("5_5wwvk")]
+position = Vector2(-8, 4)
+
+[node name="bloco10" parent="base4" instance=ExtResource("5_5wwvk")]
+position = Vector2(8, 0)
+
+[node name="bloco11" parent="base4" instance=ExtResource("5_5wwvk")]
+position = Vector2(8, 4)
+
+[node name="base5" type="Node2D" parent="."]
+position = Vector2(189, 212)
+
+[node name="bloco5" parent="base5" instance=ExtResource("5_5wwvk")]
+position = Vector2(-2, -4)
+
+[node name="bloco4" parent="base5" instance=ExtResource("5_5wwvk")]
+position = Vector2(-6, -4)
+
+[node name="bloco" parent="base5" instance=ExtResource("5_5wwvk")]
+position = Vector2(-4, -8)
+
+[node name="bloco2" parent="base5" instance=ExtResource("5_5wwvk")]
+position = Vector2(4, -8)
+
+[node name="bloco3" parent="base5" instance=ExtResource("5_5wwvk")]
+position = Vector2(2, -4)
+
+[node name="bloco6" parent="base5" instance=ExtResource("5_5wwvk")]
+position = Vector2(0, -8)
+
+[node name="bloco7" parent="base5" instance=ExtResource("5_5wwvk")]
+position = Vector2(6, -4)
+
+[node name="bloco8" parent="base5" instance=ExtResource("5_5wwvk")]
+position = Vector2(-8, 0)
+
+[node name="bloco9" parent="base5" instance=ExtResource("5_5wwvk")]
+position = Vector2(-8, 4)
+
+[node name="bloco10" parent="base5" instance=ExtResource("5_5wwvk")]
+position = Vector2(8, 0)
+
+[node name="bloco11" parent="base5" instance=ExtResource("5_5wwvk")]
+position = Vector2(8, 4)
+
+[node name="base6" type="Node2D" parent="."]
+position = Vector2(229, 212)
+
+[node name="bloco5" parent="base6" instance=ExtResource("5_5wwvk")]
+position = Vector2(-2, -4)
+
+[node name="bloco4" parent="base6" instance=ExtResource("5_5wwvk")]
+position = Vector2(-6, -4)
+
+[node name="bloco" parent="base6" instance=ExtResource("5_5wwvk")]
+position = Vector2(-4, -8)
+
+[node name="bloco2" parent="base6" instance=ExtResource("5_5wwvk")]
+position = Vector2(4, -8)
+
+[node name="bloco3" parent="base6" instance=ExtResource("5_5wwvk")]
+position = Vector2(2, -4)
+
+[node name="bloco6" parent="base6" instance=ExtResource("5_5wwvk")]
+position = Vector2(0, -8)
+
+[node name="bloco7" parent="base6" instance=ExtResource("5_5wwvk")]
+position = Vector2(6, -4)
+
+[node name="bloco8" parent="base6" instance=ExtResource("5_5wwvk")]
+position = Vector2(-8, 0)
+
+[node name="bloco9" parent="base6" instance=ExtResource("5_5wwvk")]
+position = Vector2(-8, 4)
+
+[node name="bloco10" parent="base6" instance=ExtResource("5_5wwvk")]
+position = Vector2(8, 0)
+
+[node name="bloco11" parent="base6" instance=ExtResource("5_5wwvk")]
+position = Vector2(8, 4)
