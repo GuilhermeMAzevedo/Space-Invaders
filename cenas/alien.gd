@@ -25,6 +25,7 @@ func _on_timer_movimento_timeout():
 
 func explosion():
 	animation_alien.play("destroy")
+	$AudioStreamPlayer.play()
 	
 func elimination():
 	emit_signal("alien_eliminado")
@@ -34,3 +35,4 @@ func disparar():
 	var missil = Missil.instantiate()
 	missil.global_position = spawn_point.global_position
 	get_parent().add_child(missil)
+	$AudioStreamPlayer2.play()

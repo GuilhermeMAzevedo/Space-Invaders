@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bf553x4mydmlr"]
+[gd_scene load_steps=7 format=3 uid="uid://bf553x4mydmlr"]
 
 [ext_resource type="Script" uid="uid://b51pw6qcspyjy" path="res://cenas/main.gd" id="1_b30p5"]
 [ext_resource type="PackedScene" uid="uid://chukmgdoowye5" path="res://cenas/jogador.tscn" id="1_t4ukd"]
 [ext_resource type="PackedScene" uid="uid://ce6vhm4jl8e36" path="res://cenas/group_aliens.tscn" id="2_t4ukd"]
 [ext_resource type="FontFile" uid="uid://bwqpsr6j4ris1" path="res://Assets Space Invades/fonts/atari-classic-font/AtariClassic-gry3.ttf" id="4_5wwvk"]
 [ext_resource type="PackedScene" uid="uid://0q188e1damjy" path="res://cenas/bloco.tscn" id="5_5wwvk"]
+[ext_resource type="Script" uid="uid://dj0xpulv7imw5" path="res://cenas/chao.gd" id="6_bhvw8"]
 
 [node name="main" type="Node"]
 script = ExtResource("1_b30p5")
@@ -246,3 +247,6 @@ position = Vector2(8, 0)
 
 [node name="bloco11" parent="base6" instance=ExtResource("5_5wwvk")]
 position = Vector2(8, 4)
+
+[node name="Chao" type="Node" parent="."]
+script = ExtResource("6_bhvw8")

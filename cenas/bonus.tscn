@@ -1,0 +1,86 @@
+[gd_scene load_steps=9 format=3 uid="uid://csucjjg6wvjvj"]
+
+[ext_resource type="Script" uid="uid://by31knitl0o31" path="res://bonus.gd" id="1_nj0eb"]
+[ext_resource type="Texture2D" uid="uid://p1g3emli7cbt" path="res://Assets Space Invades/Sprites/bonus.png" id="2_36gnw"]
+[ext_resource type="AudioStream" uid="uid://bughephk86k6f" path="res://Assets Space Invades/sfx/explosion.wav" id="3_36gnw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bxq28"]
+size = Vector2(16, 7)
+
+[sub_resource type="Animation" id="Animation_lmpwt"]
+resource_name = "normal"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_06osx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_yti0n"]
+resource_name = "destruindo"
+length = 0.8
+step = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [1, 2]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5c8bn"]
+_data = {
+&"RESET": SubResource("Animation_06osx"),
+&"destruindo": SubResource("Animation_yti0n"),
+&"normal": SubResource("Animation_lmpwt")
+}
+
+[node name="Bonus" type="CharacterBody2D" groups=["aliens"]]
+position = Vector2(239, 26)
+script = ExtResource("1_nj0eb")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_36gnw")
+hframes = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_bxq28")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_5c8bn")
+}
+autoplay = "normal"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_36gnw")
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

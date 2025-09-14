@@ -17,10 +17,13 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
-	if Input.is_action_just_pressed("shoot"):
+	if Input.is_action_just_pressed("shoot") and pode_disparar == true:
 		var l = laser.instantiate()
 		l.global_position = self.global_position
 		get_parent().add_child(l)
+		pode_disparar = false
+		timer_disparo.start()
+		$AudioStreamPlayer.play()
 
 	move_and_slide()
 	
@@ -34,5 +37,6 @@ func destruir():
 	
 func eliminado():
 	if !self.is_queued_for_deletion():
-		get_parent().remove_child(self)
-		queue_free()
+		get_tree().change_scene_to_file("res://cenas/game_over.tscn")
+		#get_parent().remove_child(self)
+		#queue_free()

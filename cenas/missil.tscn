@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gxv3c"]
 size = Vector2(3, 7)
 
-[node name="Missil" type="Area2D"]
+[node name="Missil" type="Area2D" groups=["misseis"]]
 script = ExtResource("1_gxv3c")
 metadata/_edit_group_ = true
 

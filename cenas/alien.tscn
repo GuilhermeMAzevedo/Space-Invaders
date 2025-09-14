@@ -1,7 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://bfbhynt3k04ya"]
+[gd_scene load_steps=10 format=3 uid="uid://bfbhynt3k04ya"]
 
 [ext_resource type="Texture2D" uid="uid://dx8di8weg7k6x" path="res://Assets Space Invades/Sprites/alien1.png" id="1_bqx7c"]
 [ext_resource type="Script" uid="uid://cpirjl01gft65" path="res://cenas/alien.gd" id="1_o4thi"]
+[ext_resource type="AudioStream" uid="uid://c74wcbow3sur6" path="res://Assets Space Invades/sfx/invaderkilled.wav" id="3_5lcmi"]
+[ext_resource type="AudioStream" uid="uid://gb2psrf0ico" path="res://Assets Space Invades/sfx/fastinvader1.wav" id="4_jiako"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5wwvk"]
 size = Vector2(11, 8)
@@ -96,5 +98,11 @@ wait_time = 0.5
 
 [node name="spawnPoint" type="Marker2D" parent="."]
 position = Vector2(0, 8)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_5lcmi")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_jiako")
 
 [connection signal="timeout" from="timerMovimento" to="." method="_on_timer_movimento_timeout"]

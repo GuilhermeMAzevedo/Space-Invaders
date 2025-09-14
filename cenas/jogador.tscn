@@ -1,25 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://chukmgdoowye5"]
+[gd_scene load_steps=9 format=3 uid="uid://chukmgdoowye5"]
 
 [ext_resource type="Script" uid="uid://xyejc66c22yh" path="res://cenas/jogador.gd" id="1_06a7y"]
 [ext_resource type="Texture2D" uid="uid://mrduev78klxl" path="res://Assets Space Invades/Sprites/jugador.png" id="2_w41yl"]
+[ext_resource type="AudioStream" uid="uid://bl670ejykjnuc" path="res://Assets Space Invades/sfx/shoot.wav" id="3_w41yl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b30p5"]
 size = Vector2(15, 6)
-
-[sub_resource type="Animation" id="Animation_06a7y"]
-resource_name = "vivo"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
-}
 
 [sub_resource type="Animation" id="Animation_w41yl"]
 length = 0.001
@@ -66,6 +52,21 @@ tracks/1/keys = {
 }]
 }
 
+[sub_resource type="Animation" id="Animation_06a7y"]
+resource_name = "vivo"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ufweb"]
 _data = {
 &"RESET": SubResource("Animation_w41yl"),
@@ -97,5 +98,8 @@ libraries = {
 &"": SubResource("AnimationLibrary_ufweb")
 }
 autoplay = "vivo"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_w41yl")
 
 [connection signal="timeout" from="timerDisparo" to="." method="_on_timer_disparo_timeout"]
