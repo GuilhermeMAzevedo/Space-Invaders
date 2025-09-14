@@ -4,3 +4,14 @@
 
 [node name="groupAliens" type="Node"]
 script = ExtResource("1_r6gns")
+
+[node name="timerDescida" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[node name="timerDisparar" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[connection signal="timeout" from="timerDescida" to="." method="_on_timer_descida_timeout"]
+[connection signal="timeout" from="timerDisparar" to="." method="_on_timer_disparar_timeout"]

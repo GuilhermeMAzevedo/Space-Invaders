@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1757805897
+::res://::1757849058
 icon.svg::CompressedTexture2D/CompressedTexture2D::2252446495058623977::1757796875::1757796883::1::::<><><>0<>0<>63b179352a71c109d8fba7f109aff366<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile/TextFile::-1::1757796734::0::1::::<><><>0<>0<><>::
 ::res://Assets Space Invades/::1757796907
@@ -21,9 +21,13 @@ bonus.png::CompressedTexture2D/CompressedTexture2D::1106921009504769821::1755696
 disparoEnemigo.png::CompressedTexture2D/CompressedTexture2D::3441347417019295273::1755696300::1757796930::1::::<><><>0<>0<>eb13b94911049fe836ace7adfb8496e0<>res://.godot/imported/disparoEnemigo.png-54a63989306512e63e11fd610686e8cb.ctex::
 disparoJugador.png::CompressedTexture2D/CompressedTexture2D::4844777099064771309::1755696300::1757796930::1::::<><><>0<>0<>aa1ba5e44cfdddb68f1e4faa00271c86<>res://.godot/imported/disparoJugador.png-5043dfbdcced7a07053f0abb174f8b80.ctex::
 jugador.png::CompressedTexture2D/CompressedTexture2D::877578656364534629::1755696300::1757796930::1::::<><><>0<>0<>94c5f6a1520b70f1c7b098f53a9cd4bd<>res://.godot/imported/jugador.png-23dff42b5e35c528cbe7531e2c7c8bb5.ctex::
-::res://cenas/::1757805683
-jogador.gd::GDScript::1664147564236290619::1757805683::0::1::::<>CharacterBody2D<><>0<>0<><>::
-jogador.tscn::PackedScene::5306079747818359062::1757805683::0::1::::<><><>0<>0<><>::uid://xyejc66c22yh::::res://cenas/jogador.gd<>uid://mrduev78klxl::::res://Assets Space Invades/Sprites/jugador.png
-laser.gd::GDScript/GDScript::402632831430201299::1757804962::0::1::::<>Area2D<><>0<>0<><>::
-Laser.tscn::PackedScene::2920455502089398535::1757805446::0::1::::<><><>0<>0<><>::uid://f0bklk2s1bhr::::res://cenas/laser.gd<>uid://cba31hja1c41v::::res://Assets Space Invades/Sprites/disparoJugador.png
-main.tscn::PackedScene::2801168999931197967::1757805446::0::1::::<><><>0<>0<><>::uid://chukmgdoowye5::::res://cenas/jogador.tscn<>uid://dx8di8weg7k6x::::res://Assets Space Invades/Sprites/alien1.png
+::res://cenas/::1757812001
+alien.gd::GDScript::5843237922577860624::1757811676::0::1::::<>CharacterBody2D<><>0<>0<><>::
+alien.tscn::PackedScene::2739897871081813452::1757811977::0::1::::<><><>0<>0<><>::uid://dx8di8weg7k6x::::res://Assets Space Invades/Sprites/alien1.png<>uid://cpirjl01gft65::::res://cenas/alien.gd
+group_aliens.gd::GDScript::389199517927352363::1757811977::0::1::::<>Node<><>0<>0<><>::
+group_aliens.tscn::PackedScene::5118880685224065663::1757811977::0::1::::<><><>0<>0<><>::uid://fsscaox0u7il::::res://cenas/group_aliens.gd
+jogador.gd::GDScript::1664147564236290619::1757811621::0::1::::<>CharacterBody2D<><>0<>0<><>::
+jogador.tscn::PackedScene::5306079747818359062::1757812001::0::1::::<><><>0<>0<><>::uid://xyejc66c22yh::::res://cenas/jogador.gd<>uid://mrduev78klxl::::res://Assets Space Invades/Sprites/jugador.png
+laser.gd::GDScript::402632831430201299::1757808703::0::1::::<>Area2D<><>0<>0<><>::
+Laser.tscn::PackedScene::2920455502089398535::1757811977::0::1::::<><><>0<>0<><>::uid://f0bklk2s1bhr::::res://cenas/laser.gd<>uid://cba31hja1c41v::::res://Assets Space Invades/Sprites/disparoJugador.png
+main.tscn::PackedScene::2801168999931197967::1757811977::0::1::::<><><>0<>0<><>::uid://chukmgdoowye5::::res://cenas/jogador.tscn<>uid://ce6vhm4jl8e36::::res://cenas/group_aliens.tscn

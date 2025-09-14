@@ -94,4 +94,7 @@ autoplay = "lives"
 [node name="timerMovimento" type="Timer" parent="."]
 wait_time = 0.5
 
+[node name="spawnPoint" type="Marker2D" parent="."]
+position = Vector2(0, 8)
+
 [connection signal="timeout" from="timerMovimento" to="." method="_on_timer_movimento_timeout"]

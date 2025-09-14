@@ -1,7 +1,9 @@
 extends CharacterBody2D
 
+var Missil = preload("res://cenas/missil.tscn")
 @onready var time_movimento = $timerMovimento
 @onready var animation_alien = $AnimationAlien
+@onready var spawn_point = $spawnPoint
 
 var origin = 0
 var distancia = 10
@@ -27,3 +29,7 @@ func elimination():
 	emit_signal("alien_eliminado")
 	get_parent().remove_child(self)
 	queue_free()
+func disparar():
+	var missil = Missil.instantiate()
+	missil.global_position = spawn_point.global_position
+	get_parent().add_child(missil)
