@@ -6,13 +6,13 @@ var Bonus = preload("res://cenas/bonus.tscn")
 @onready var timer_disparar = $timerDisparar
 
 var lista_aliens = []
+var aliens_mortos = 0
 
-func _ready():
-	$timerBonus.wait_time = randf_range(3.0, 20.0)
-	$timerBonus.start()
+
+func new_ready():
 	for j in range(4):
 		lista_aliens.append([])
-		for i in range(8):
+		for i in range(6):
 			var alien = Alien.instantiate()
 			alien.global_position = Vector2(50+20*i, 20+20*j)
 			self.add_child(alien)
@@ -21,22 +21,32 @@ func _ready():
 			alien.connect("alien_eliminado", Callable(get_parent(), "Somar_pontos_alien"))
 	#print(lista_aliens)
 func eliminar_alien(a):
-	#print("alien eliminado")
+	aliens_mortos += 1
 	for fila in lista_aliens:
-		for i in range(len(fila)-1):
-			if a == fila[i]:
-				fila.remove_at(i)
-
+		fila.erase(a)
+	if aliens_mortos == 24:
+		reiniciar()
+func reiniciar():
+	for fila in lista_aliens:
+		for a in fila:
+			if is_instance_valid(a) and !a.is_queued_for_deletion():
+				a.queue_free()
+	lista_aliens.clear()
+	aliens_mortos = 0
+	new_ready()
+func _ready():
+	$timerBonus.wait_time = randf_range(3.0, 20.0)
+	$timerBonus.start()
+	new_ready()
 
 func _on_timer_descida_timeout():
-	#print("descendo")
 	for fila in lista_aliens:
 		for a in fila:
 			if is_instance_valid(a):
-				a.position.y += 21 
+				a.position.y += 15 
 
 
-func _on_timer_disparar_timeout() -> void:
+func _on_timer_disparar_timeout():
 	var lista_aliens_vivos = []
 	for fila in lista_aliens:
 		for a in fila:
@@ -49,7 +59,7 @@ func _on_timer_disparar_timeout() -> void:
 		timer_disparar.wait_time = randf_range(2, 5)
 
 
-func _on_timer_bonus_timeout() -> void:
+func _on_timer_bonus_timeout():
 	var bonus = Bonus.instantiate()
 	self.add_child(bonus)
 	bonus.connect("bonus_eliminado", Callable(get_parent(), "somar_bonus"))

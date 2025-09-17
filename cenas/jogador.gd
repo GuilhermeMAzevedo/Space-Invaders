@@ -10,6 +10,8 @@ var direction = Vector2()
 const SPEED = 100.0
 var pode_disparar = true
 
+signal jogador_vida_a_menos
+
 func _physics_process(delta):
 	var direction := Input.get_axis("ui_left", "ui_right")
 	if direction != 0:
@@ -24,6 +26,7 @@ func _physics_process(delta):
 		pode_disparar = false
 		timer_disparo.start()
 		$AudioStreamPlayer.play()
+	
 
 	move_and_slide()
 	
@@ -32,11 +35,11 @@ func _on_timer_disparo_timeout():
 	pode_disparar = true
 
 func destruir():
-	#print("tomou dano")
 	animation_player.play("destruido")
 	
+func reviver():
+	animation_player.play("vivo")
+	
 func eliminado():
-	if !self.is_queued_for_deletion():
-		get_tree().change_scene_to_file("res://cenas/game_over.tscn")
-		#get_parent().remove_child(self)
-		#queue_free()
+	emit_signal("jogador_vida_a_menos")
+	

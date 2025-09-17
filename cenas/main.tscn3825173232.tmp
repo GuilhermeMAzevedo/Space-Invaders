@@ -28,7 +28,7 @@ theme_override_font_sizes/font_size = 7
 text = "Points: 0"
 
 [node name="base" type="Node2D" parent="."]
-position = Vector2(33, 214)
+position = Vector2(41, 272)
 
 [node name="bloco5" parent="base" instance=ExtResource("5_5wwvk")]
 position = Vector2(-2, -4)
@@ -64,7 +64,7 @@ position = Vector2(8, 0)
 position = Vector2(8, 4)
 
 [node name="base2" type="Node2D" parent="."]
-position = Vector2(72, 214)
+position = Vector2(80, 286)
 
 [node name="bloco5" parent="base2" instance=ExtResource("5_5wwvk")]
 position = Vector2(-2, -4)
@@ -100,7 +100,7 @@ position = Vector2(8, 0)
 position = Vector2(8, 4)
 
 [node name="base3" type="Node2D" parent="."]
-position = Vector2(109, 214)
+position = Vector2(128, 295)
 
 [node name="bloco5" parent="base3" instance=ExtResource("5_5wwvk")]
 position = Vector2(-2, -4)
@@ -136,7 +136,7 @@ position = Vector2(8, 0)
 position = Vector2(8, 4)
 
 [node name="base4" type="Node2D" parent="."]
-position = Vector2(146, 214)
+position = Vector2(169, 281)
 
 [node name="bloco5" parent="base4" instance=ExtResource("5_5wwvk")]
 position = Vector2(-2, -4)
@@ -172,7 +172,7 @@ position = Vector2(8, 0)
 position = Vector2(8, 4)
 
 [node name="base5" type="Node2D" parent="."]
-position = Vector2(184, 214)
+position = Vector2(208, 297)
 
 [node name="bloco5" parent="base5" instance=ExtResource("5_5wwvk")]
 position = Vector2(-2, -4)
@@ -208,7 +208,7 @@ position = Vector2(8, 0)
 position = Vector2(8, 4)
 
 [node name="base6" type="Node2D" parent="."]
-position = Vector2(222, 214)
+position = Vector2(235, 302)
 
 [node name="bloco5" parent="base6" instance=ExtResource("5_5wwvk")]
 position = Vector2(-2, -4)

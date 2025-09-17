@@ -1,5 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1757859556
+::res://::1758075221
+bonus.gd::GDScript/GDScript::4130352703911488738::1757866491::0::1::::<>CharacterBody2D<><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::2252446495058623977::1757796875::1757796883::1::::<><><>0<>0<>63b179352a71c109d8fba7f109aff366<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile/TextFile::-1::1757796734::0::1::::<><><>0<>0<><>::
 ::res://Assets Space Invades/::1757796907
@@ -9,7 +10,8 @@ AtariClassic-gry3.ttf::FontFile/FontFile::3964549128210794966::1755696300::17578
 AtariClassicChunky-PxXP.ttf::FontFile/FontFile::3316751431692154916::1755696300::1757796930::1::::<><><>0<>0<>967440b6c8ba0fa9512e8ea59366922e<>res://.godot/imported/AtariClassicChunky-PxXP.ttf-013e44187e305bab956d4a8175819cfe.fontdata::
 AtariClassicExtrasmooth-LxZy.ttf::FontFile/FontFile::4629975568596412612::1755696300::1757796930::1::::<><><>0<>0<>44bd7f0661a398936d3ae90cdef52d18<>res://.godot/imported/AtariClassicExtrasmooth-LxZy.ttf-28d3f17d87ba098c7560af10fea51921.fontdata::
 AtariClassicSmooth-XzW2.ttf::FontFile/FontFile::7156253454791510807::1755696300::1757796930::1::::<><><>0<>0<>31b7930c4d684f7d4bd0e91b64045303<>res://.godot/imported/AtariClassicSmooth-XzW2.ttf-8b7b385493de7d41b41434c19cab781a.fontdata::
-::res://Assets Space Invades/sfx/::1757796930
+::res://Assets Space Invades/sfx/::1757874819
+4fe7858f34cdd0cdba3ff384b80d246d-pixel-art-coracao-vermelho.png::CompressedTexture2D/CompressedTexture2D::2545336934646689123::1757874819::1757874812::1::::<><><>0<>0<>3c40b9e508b5d40354f060586c3f0684<>res://.godot/imported/4fe7858f34cdd0cdba3ff384b80d246d-pixel-art-coracao-vermelho.png-c1beef8c74505eedd96ae80881d73dac.ctex::
 explosion.wav::AudioStreamWAV/AudioStreamWAV::3803016784266659667::1755696299::1757796930::1::::<><><>0<>0<>c32deda571d69facb6dab7c797f941dc<>res://.godot/imported/explosion.wav-96879c49d59c259f6d03a66feb7d5bb9.sample::
 fastinvader1.wav::AudioStreamWAV/AudioStreamWAV::12496016389364778::1755696299::1757796930::1::::<><><>0<>0<>85b9f6f593c576fdeb0ee02b92257571<>res://.godot/imported/fastinvader1.wav-803def4114d83fbb3bcd1c0a37d45bbc.sample::
 invaderkilled.wav::AudioStreamWAV/AudioStreamWAV::7080090739287983809::1755696299::1757796930::1::::<><><>0<>0<>1722ea5af14486a314880c952504811c<>res://.godot/imported/invaderkilled.wav-576aef180487a34fe8f032155770bf04.sample::
@@ -21,18 +23,29 @@ bonus.png::CompressedTexture2D/CompressedTexture2D::1106921009504769821::1755696
 disparoEnemigo.png::CompressedTexture2D/CompressedTexture2D::3441347417019295273::1755696300::1757796930::1::::<><><>0<>0<>eb13b94911049fe836ace7adfb8496e0<>res://.godot/imported/disparoEnemigo.png-54a63989306512e63e11fd610686e8cb.ctex::
 disparoJugador.png::CompressedTexture2D/CompressedTexture2D::4844777099064771309::1755696300::1757796930::1::::<><><>0<>0<>aa1ba5e44cfdddb68f1e4faa00271c86<>res://.godot/imported/disparoJugador.png-5043dfbdcced7a07053f0abb174f8b80.ctex::
 jugador.png::CompressedTexture2D/CompressedTexture2D::877578656364534629::1755696300::1757796930::1::::<><><>0<>0<>94c5f6a1520b70f1c7b098f53a9cd4bd<>res://.godot/imported/jugador.png-23dff42b5e35c528cbe7531e2c7c8bb5.ctex::
-::res://cenas/::1757859480
-alien.gd::GDScript::5843237922577860624::1757857218::0::1::::<>CharacterBody2D<><>0<>0<><>::
-alien.tscn::PackedScene::2739897871081813452::1757859445::0::1::::<><><>0<>0<><>::uid://dx8di8weg7k6x::::res://Assets Space Invades/Sprites/alien1.png<>uid://cpirjl01gft65::::res://cenas/alien.gd
-bloco.gd::GDScript::2962200253433360501::1757859443::0::1::::<>StaticBody2D<><>0<>0<><>::
-bloco.tscn::PackedScene::1789390448661672298::1757859445::0::1::::<><><>0<>0<><>::uid://big6agh5ojvdt::::res://cenas/bloco.gd<>uid://dmrt08ssvob52::::res://Assets Space Invades/Sprites/bloque.png
-group_aliens.gd::GDScript/GDScript::389199517927352363::1757851177::0::1::::<>Node<><>0<>0<><>::
-group_aliens.tscn::PackedScene::5118880685224065663::1757859445::0::1::::<><><>0<>0<><>::uid://fsscaox0u7il::::res://cenas/group_aliens.gd
-jogador.gd::GDScript::1664147564236290619::1757857457::0::1::::<>CharacterBody2D<><>0<>0<><>::
-jogador.tscn::PackedScene::5306079747818359062::1757859445::0::1::::<><><>0<>0<><>::uid://xyejc66c22yh::::res://cenas/jogador.gd<>uid://mrduev78klxl::::res://Assets Space Invades/Sprites/jugador.png
-laser.gd::GDScript/GDScript::402632831430201299::1757808703::0::1::::<>Area2D<><>0<>0<><>::
-Laser.tscn::PackedScene::2920455502089398535::1757859445::0::1::::<><><>0<>0<><>::uid://f0bklk2s1bhr::::res://cenas/laser.gd<>uid://cba31hja1c41v::::res://Assets Space Invades/Sprites/disparoJugador.png
-main.gd::GDScript/GDScript::4546711509853299074::1757851356::0::1::::<>Node<><>0<>0<><>::
-main.tscn::PackedScene::2801168999931197967::1757859480::0::1::::<><><>0<>0<><>::uid://b51pw6qcspyjy::::res://cenas/main.gd<>uid://chukmgdoowye5::::res://cenas/jogador.tscn<>uid://ce6vhm4jl8e36::::res://cenas/group_aliens.tscn<>uid://bwqpsr6j4ris1::::res://Assets Space Invades/fonts/atari-classic-font/AtariClassic-gry3.ttf<>uid://0q188e1damjy::::res://cenas/bloco.tscn
-missil.gd::GDScript::8267547378710609110::1757858666::0::1::::<>Area2D<><>0<>0<><>::
-missil.tscn::PackedScene::5024634434493353632::1757859445::0::1::::<><><>0<>0<><>::uid://bpbaqvqna7yub::::res://Assets Space Invades/Sprites/disparoEnemigo.png<>uid://dp14kd263h0kg::::res://cenas/missil.gd
+::res://cenas/::1758074787
+alien.gd::GDScript/GDScript::5843237922577860624::1758071867::0::1::::<>CharacterBody2D<><>0<>0<><>::
+alien.tscn::PackedScene::2739897871081813452::1758074787::0::1::::<><><>0<>0<><>::uid://dx8di8weg7k6x::::res://Assets Space Invades/Sprites/alien1.png<>uid://cpirjl01gft65::::res://cenas/alien.gd<>uid://c74wcbow3sur6::::res://Assets Space Invades/sfx/invaderkilled.wav<>uid://gb2psrf0ico::::res://Assets Space Invades/sfx/fastinvader1.wav
+area_game_over.gd::GDScript/GDScript::3616735809945880474::1757864418::0::1::::<>RefCounted<><>0<>0<><>::
+bloco.gd::GDScript/GDScript::2962200253433360501::1757859443::0::1::::<>StaticBody2D<><>0<>0<><>::
+bloco.tscn::PackedScene::1789390448661672298::1758074787::0::1::::<><><>0<>0<><>::uid://big6agh5ojvdt::::res://cenas/bloco.gd<>uid://dmrt08ssvob52::::res://Assets Space Invades/Sprites/bloque.png
+bonus.tscn::PackedScene::6077666097500369375::1758074787::0::1::::<><><>0<>0<><>::uid://by31knitl0o31::::res://bonus.gd<>uid://p1g3emli7cbt::::res://Assets Space Invades/Sprites/bonus.png<>uid://bughephk86k6f::::res://Assets Space Invades/sfx/explosion.wav
+chao.gd::GDScript/GDScript::7843995433872378330::1757863216::0::1::::<>Node<><>0<>0<><>::
+game_over.gd::GDScript/GDScript::3893587749460597249::1757864418::0::1::::<>Node2D<><>0<>0<><>::
+game_over.tscn::PackedScene::1553364301990934678::1758074787::0::1::::<><><>0<>0<><>::uid://bwqpsr6j4ris1::::res://Assets Space Invades/fonts/atari-classic-font/AtariClassic-gry3.ttf<>uid://bvqc26ri0mbnt::::res://cenas/game_over.gd
+group_aliens.gd::GDScript/GDScript::389199517927352363::1758071112::0::1::::<>Node<><>0<>0<><>::
+group_aliens.tscn::PackedScene::5118880685224065663::1758074787::0::1::::<><><>0<>0<><>::uid://fsscaox0u7il::::res://cenas/group_aliens.gd
+jogador.gd::GDScript/GDScript::1664147564236290619::1758064009::0::1::::<>CharacterBody2D<><>0<>0<><>::
+jogador.tscn::PackedScene::5306079747818359062::1758074787::0::1::::<><><>0<>0<><>::uid://xyejc66c22yh::::res://cenas/jogador.gd<>uid://mrduev78klxl::::res://Assets Space Invades/Sprites/jugador.png<>uid://bl670ejykjnuc::::res://Assets Space Invades/sfx/shoot.wav
+laser.gd::GDScript/GDScript::402632831430201299::1757865864::0::1::::<>Area2D<><>0<>0<><>::
+Laser.tscn::PackedScene::2920455502089398535::1758074787::0::1::::<><><>0<>0<><>::uid://f0bklk2s1bhr::::res://cenas/laser.gd<>uid://c742jmey2j24i::::res://Mods/Sprites/10-101820_green-laser-light (1).png
+main.gd::GDScript::4546711509853299074::1758074033::0::1::::<>Node<><>0<>0<><>::
+main.tscn::PackedScene::2801168999931197967::1758074787::0::1::::<><><>0<>0<><>::uid://b51pw6qcspyjy::::res://cenas/main.gd<>uid://chukmgdoowye5::::res://cenas/jogador.tscn<>uid://ce6vhm4jl8e36::::res://cenas/group_aliens.tscn<>uid://bwqpsr6j4ris1::::res://Assets Space Invades/fonts/atari-classic-font/AtariClassic-gry3.ttf<>uid://0q188e1damjy::::res://cenas/bloco.tscn<>uid://dj0xpulv7imw5::::res://cenas/chao.gd<>uid://dxovv6gk21jq3::::res://Mods/Sprites/4fe7858f34cdd0cdba3ff384b80d246d-pixel-art-coracao-vermelho.png
+missil.gd::GDScript/GDScript::8267547378710609110::1757858666::0::1::::<>Area2D<><>0<>0<><>::
+missil.tscn::PackedScene::5024634434493353632::1758074787::0::1::::<><><>0<>0<><>::uid://dp14kd263h0kg::::res://cenas/missil.gd<>uid://dglaohrev8nhm::::res://Mods/Sprites/pngtree-thunder-and-bolt-lighting-flash-vector-png-image_1502121.png
+::res://Mods/::1757874850
+::res://Mods/Sprites/::1758063519
+4fe7858f34cdd0cdba3ff384b80d246d-pixel-art-coracao-vermelho.png::CompressedTexture2D/CompressedTexture2D::8803820939815132576::1757874545::1757874862::1::::<><><>0<>0<>6daa9343e1dcffc8e29b28fd607ece99<>res://.godot/imported/4fe7858f34cdd0cdba3ff384b80d246d-pixel-art-coracao-vermelho.png-1082ccbfd43bf9caeffc641bd703d2d6.ctex::
+10-101820_green-laser-light (1).png::CompressedTexture2D/CompressedTexture2D::7080407387207147078::1757979945::1757980006::1::::<><><>0<>0<>f5466c34d0965a954da50ae02c77e791<>res://.godot/imported/10-101820_green-laser-light (1).png-4ce0a7267c18a6be37131e19f2e48c86.ctex::
+11846705.png::CompressedTexture2D/CompressedTexture2D::6466903889808271322::1757980589::1757980623::1::::<><><>0<>0<>586eb8e72be64d1eac9907d9fdeec3ea<>res://.godot/imported/11846705.png-5cfa5a8d26538ec23fe741780c1320d3.ctex::
+pngtree-thunder-and-bolt-lighting-flash-vector-png-image_1502121.png::CompressedTexture2D/CompressedTexture2D::7603128663453066694::1758063492::1758063519::1::::<><><>0<>0<>f58fdc1a3c15f286abd25b54e883d6f0<>res://.godot/imported/pngtree-thunder-and-bolt-lighting-flash-vector-png-image_1502121.png-ce770fc5906f0a9b031ed55dac4c92c7.ctex::

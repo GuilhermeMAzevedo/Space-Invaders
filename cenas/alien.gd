@@ -28,7 +28,7 @@ func explosion():
 	$AudioStreamPlayer.play()
 	
 func elimination():
-	emit_signal("alien_eliminado")
+	emit_signal("alien_eliminado", self)
 	get_parent().remove_child(self)
 	queue_free()
 func disparar():
